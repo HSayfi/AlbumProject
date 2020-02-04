@@ -159,8 +159,93 @@
 
         <div class="album py-5 bg-light ">
             <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <label>رقم المستخدم: <?php
+                                                    $userID = $_REQUEST['userIDAr'];;
+                                                    echo $userID
+                                                    ?></label>
+                        </div>
 
-                
+                        <div class="row">
+                            <label>البريد الالكتروني: <?php
+                                                        $regEmailAR = $_POST['regEmailAr'];;
+                                                        echo $regEmailAR
+                                                        ?>
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <label>Username: <?php
+                                                $regUsername = $_REQUEST['regUsernameAr'];;
+                                                echo $regUsername
+                                                ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>Password: <?php
+                                                $regPassword = $_REQUEST['regPasswordAr'];;
+                                                echo $regPassword
+                                                ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>Address: <?php
+                                            $regAddress = $_REQUEST['regAddressAr'];;
+                                            echo $regAddress
+                                            ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>Address 2: <?php
+                                                $regAddress2 = $_REQUEST['regAddress2Ar'];;
+                                                echo $regAddress2
+                                                ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>City: <?php
+                                            $regCity = $_REQUEST['regCityAr'];;
+                                            echo $regCity
+                                            ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>State: <?php
+                                            $regState = $_REQUEST['regStateAr'];;
+                                            echo $regState
+                                            ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>Zip: <?php
+                                        $regZip = $_REQUEST['regZipAr'];;
+                                        echo $regZip
+                                        ?></label>
+                        </div>
+
+                        <div class="row">
+                            <label>Gender: <?php
+                                            $genderRadio = $_REQUEST['genderRadioAr'];;
+                                            echo $genderRadio
+                                            ?></label>
+                        </div>
+
+
+                        <div class="row">
+                            <label>Image: <?php
+                                            $regImage = $_REQUEST['regImageAr'];;
+                                            echo $regImage
+                                            ?></label>
+                        </div>
+                        <img id="imgUpload" class="img-thumbnail" src="<?php
+                                                                        $regImage = $_REQUEST['regImageAr'];;
+                                                                        echo $regImage
+                                                                        ?>" alt="" />
+
+                    </div>
+                </div>
             </div>
         </div>
 

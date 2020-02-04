@@ -164,7 +164,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-10">
                         <!-- action="information_ar.php" method="GET" -->
-                        <form>
+                        <form action="information_AR.php" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">البريد الالكتروني</label>
@@ -221,17 +221,39 @@
                                     <input type="number" class="form-control" name="regZipAr" id="regZipAr" maxlength="5" placeholder="12345">
                                 </div>
                             </div>
+                            <div>
+                                <label for="inputImage">رفع الصورة</label>
+                                <br />
+                                <input type="file" id="regImageAr" name="regImageAr" onchange="PreviewImage();">
+                                <br />
+                                <div class="container">
+                                    <img id="imgUploadAr" class="img-thumbnail" src="#" alt="" />
+
+                                    <script type="text/javascript">
+                                        function PreviewImage() {
+                                            var oFReader = new FileReader();
+                                            oFReader.readAsDataURL(document.getElementById("regImageAr").files[0]);
+
+                                            oFReader.onload = function(oFREvent) {
+                                                document.getElementById("imgUploadAr").src = oFREvent.target.result;
+                                            };
+                                        };
+                                    </script>
+                                </div>
+                            </div>
+                            <br />
+
                             <fieldset class="form-group">
                                 <div class="row">
                                     <legend class="col-form-label col-sm-1 pt-0">الجنس</legend>
                                     <div class="col-sm-1">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="genderRadio" id="maleRadioAr" value="option1" checked>
+                                            <input class="form-check-input" type="radio" name="genderRadioAr" id="maleRadioAr" value="ذكر" checked>
                                             <label class="form-check-label" for="maleRadio" style="padding-right: 50px !important;">ذكر</label>
                                         </div>
                                         <br />
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="genderRadio" id="femaleRadioAr" value="option2">
+                                            <input class="form-check-input" type="radio" name="genderRadioAr" id="femaleRadioAr" value="أنثى">
                                             <label class="form-check-label" for="femaleRadio" style="padding-right: 50px !important;">أنثى</label>
                                         </div>
                                     </div>
@@ -246,13 +268,13 @@
                                 <div class="col-md-1"></div>
                             </div>
                             <br />
-                            <input id="userID" type="text" value="0" name="id" class="form-control" style="text-align: center" />
+                            <input id="userIDAR" name="userIDAR" type="text" value="0" class="form-control" style="text-align: center" />
                             <script>
-                                function incUserID() {
-                                    var number = 1000 + Math.floor(Math.random() * 999999999999999);
-                                    // var count = parseInt($('#userID').val());
-                                    $('#userID').val(number);
+                                function myFunction() {
+                                    var number = 1000 + Math.floor(Math.random() * 9999);
+                                    return number;
                                 }
+                                document.getElementById("userIDAR").value = myFunction();
                             </script>
                         </form>
                     </div>

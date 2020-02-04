@@ -158,7 +158,6 @@
         <div class="album py-5 bg-light">
             <div class="container" style="width: 50%">
 
-                <!-- Form English -->
                 <div class="row">
                     <div class="col-md-10">
                         <div class="row">
