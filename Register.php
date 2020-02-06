@@ -159,7 +159,7 @@
 
                 <!-- Form English -->
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <form action="information.php" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -263,13 +263,13 @@
                                 <div class="col-md-1"></div>
                             </div>
                             <br />
-                            <input id="userIDAR" name="userIDAR" type="text" value="0" class="form-control" style="text-align: center" />
+                            <input id="userID" name="userID" type="text" value="0" class="form-control" style="text-align: center" />
                             <script>
                                 function myFunction() {
                                     var number = 1000 + Math.floor(Math.random() * 9999);
                                     return number;
                                 }
-                                document.getElementById("userIDAR").value = myFunction();
+                                document.getElementById("userID").value = myFunction();
                             </script>
                         </form>
                     </div>

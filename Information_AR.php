@@ -163,8 +163,8 @@
                     <div class="col-md-10">
                         <div class="row">
                             <label>رقم المستخدم: <?php
-                                                    $userID = $_REQUEST['userIDAr'];;
-                                                    echo $userID
+                                                    $userIDAr = $_REQUEST['userIDAr'];;
+                                                    echo $userIDAr
                                                     ?></label>
                         </div>
 
@@ -177,56 +177,56 @@
                         </div>
 
                         <div class="row">
-                            <label>Username: <?php
+                            <label>اسم المستخدم: <?php
                                                 $regUsername = $_REQUEST['regUsernameAr'];;
                                                 echo $regUsername
                                                 ?></label>
                         </div>
 
                         <div class="row">
-                            <label>Password: <?php
+                            <label>كلمة المرور:  <?php
                                                 $regPassword = $_REQUEST['regPasswordAr'];;
                                                 echo $regPassword
                                                 ?></label>
                         </div>
 
                         <div class="row">
-                            <label>Address: <?php
+                            <label>العنوان:  <?php
                                             $regAddress = $_REQUEST['regAddressAr'];;
                                             echo $regAddress
                                             ?></label>
                         </div>
 
                         <div class="row">
-                            <label>Address 2: <?php
+                            <label>العنوان 2 :  <?php
                                                 $regAddress2 = $_REQUEST['regAddress2Ar'];;
                                                 echo $regAddress2
                                                 ?></label>
                         </div>
 
                         <div class="row">
-                            <label>City: <?php
+                            <label>المدينة:  <?php
                                             $regCity = $_REQUEST['regCityAr'];;
                                             echo $regCity
                                             ?></label>
                         </div>
 
                         <div class="row">
-                            <label>State: <?php
+                            <label>المنطقة:  <?php
                                             $regState = $_REQUEST['regStateAr'];;
                                             echo $regState
                                             ?></label>
                         </div>
 
                         <div class="row">
-                            <label>Zip: <?php
+                            <label>الرمز البريدي:  <?php
                                         $regZip = $_REQUEST['regZipAr'];;
                                         echo $regZip
                                         ?></label>
                         </div>
 
                         <div class="row">
-                            <label>Gender: <?php
+                            <label>الجنس:  <?php
                                             $genderRadio = $_REQUEST['genderRadioAr'];;
                                             echo $genderRadio
                                             ?></label>
@@ -234,7 +234,7 @@
 
 
                         <div class="row">
-                            <label>Image: <?php
+                            <label>الصورة:  <?php
                                             $regImage = $_REQUEST['regImageAr'];;
                                             echo $regImage
                                             ?></label>

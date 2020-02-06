@@ -223,10 +223,10 @@
                             </div>
                             <div>
                                 <label for="inputImage">رفع الصورة</label>
+                                <br /><br />
+                                <input type="file" id="regImageAr" name="regImageAr" onchange="PreviewImage();" style="float: right;">
                                 <br />
-                                <input type="file" id="regImageAr" name="regImageAr" onchange="PreviewImage();">
-                                <br />
-                                <div class="container">
+                                <div class="container" >
                                     <img id="imgUploadAr" class="img-thumbnail" src="#" alt="" />
 
                                     <script type="text/javascript">
@@ -268,13 +268,13 @@
                                 <div class="col-md-1"></div>
                             </div>
                             <br />
-                            <input id="userIDAR" name="userIDAR" type="text" value="0" class="form-control" style="text-align: center" />
+                            <input id="userIDAr" name="userIDAr" type="text" value="0" class="form-control" style="text-align: center" />
                             <script>
                                 function myFunction() {
                                     var number = 1000 + Math.floor(Math.random() * 9999);
                                     return number;
                                 }
-                                document.getElementById("userIDAR").value = myFunction();
+                                document.getElementById("userIDAr").value = myFunction();
                             </script>
                         </form>
                     </div>
