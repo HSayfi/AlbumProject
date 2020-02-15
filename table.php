@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <table border="1">
+        <?php
+        for ($i = 1; $i < 10; $i++) {
+            echo "<tr>";
+            for ($j = 1; $j < 10; $j++) {
+                if ($i == $j)
+                    echo "<td style=\"background-color: red\">" . $i * $j . "</td>";
+                else
+                    echo "<td>" . $i * $j . "</td>";
+            }
+
+            echo "</tr>";
+        }
+        ?>
+    </table>
+</body>
+
+</html>
