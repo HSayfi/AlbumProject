@@ -34,6 +34,11 @@
             font-size: 14px;
             font-weight: bolder;
         }
+
+        body {
+            background: lightblue url("body.jpg") no-repeat fixed center;
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -43,29 +48,25 @@
         <div id="signupbox" style=" margin-top:100px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <div class="panel panel-info">
                 <?php
-                    $studentName = $_REQUEST['studentName'];
-                    $major = $_REQUEST['major'];
-                    $subject = $_REQUEST['subject'];
-                    $exam1 = $_REQUEST['exam1'];
-                    $exam2 = $_REQUEST['exam2'];
-                    $exam3 = $_REQUEST['exam3'];
-                    $grade = $exam1 + $exam2 + $exam3;
+                $studentName = $_REQUEST['studentName'];
+                $major = $_REQUEST['major'];
+                $subject = $_REQUEST['subject'];
+                $exam1 = $_REQUEST['exam1'];
+                $exam2 = $_REQUEST['exam2'];
+                $exam3 = $_REQUEST['exam3'];
+                $grade = $exam1 + $exam2 + $exam3;
 
-                    if ($grade > 89) {
-                        $grade = "A";
-                    }
-                    elseif ($grade > 79) {
-                        $grade = "B";
-                    }
-                    elseif ($grade > 69) {
-                        $grade = "C";
-                    }
-                    elseif ($grade > 59) {
-                        $grade = "D";
-                    }
-                    else {
-                        $grade = "F";
-                    }
+                if ($grade > 89) {
+                    $grade = "A";
+                } elseif ($grade > 79) {
+                    $grade = "B";
+                } elseif ($grade > 69) {
+                    $grade = "C";
+                } elseif ($grade > 59) {
+                    $grade = "D";
+                } else {
+                    $grade = "F";
+                }
                 ?>
                 <div class="panel-heading" style="text-align: center;">
                     <div class="panel-title" style="font-size: 24px; font-weight: bolder;">Grades Output</div>
@@ -83,27 +84,27 @@
                             <div class="form-group">
                                 <div class="form-group col-md-10">
                                     <label class="headLabel" for="major">Major</label>
-                                    <input type="text" class="form-control" value="<?php echo $major ?>"  id="major" name="major" disabled>
+                                    <input type="text" class="form-control" value="<?php echo $major ?>" id="major" name="major" disabled>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="form-group col-md-10">
                                     <label class="headLabel" for="subject">Subject</label>
-                                    <input type="text" class="form-control" value="<?php echo $subject ?>"  id="subject" name="subject" disabled>
+                                    <input type="text" class="form-control" value="<?php echo $subject ?>" id="subject" name="subject" disabled>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="form-group col-md-10">
                                     <label class="headLabel" for="grades">Grade</label>
-                                    <input type="text" class="form-control"  value="<?php echo $grade ?>"  id="major" name="major" disabled>
+                                    <input type="text" class="form-control" value="<?php echo $grade ?>" id="major" name="major" disabled>
                                 </div>
                             </div>
                         </div>
                         <br />
                         <div class="form-group col-md-12" style="margin-left: 0px;">
-                            <input type="submit" name="sumitData" value="Back" style="width: 100%; padding: 10px;" class="btn btn-primary btn btn-info" />
+                            <input type="submit" name="sumitData" value="Back" style="width: 100%; padding: 10px; font-size: 18px; font-weight: bolder;" class="btn btn-primary btn btn-info" />
                         </div>
                     </form>
                 </div>

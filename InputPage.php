@@ -29,9 +29,14 @@
     </script>
 
     <style>
-        .headLabel{
+        .headLabel {
             font-size: 14px;
             font-weight: bolder;
+        }
+
+        body {
+            background: lightblue url("body.jpg") no-repeat fixed center;
+            background-size: cover;
         }
     </style>
 </head>
@@ -91,13 +96,13 @@
                                     </div>
                                     <div class="form-row col-md-4">
                                         <label for="exam3">Final Exam 3</label>
-                                        <input type="number" class="form-control" id="exam3" name="exam3" placeholder="Exam 3" min="0" max="60" required> 
+                                        <input type="number" class="form-control" id="exam3" name="exam3" placeholder="Exam 3" min="0" max="60" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group col-md-12" style="margin-left: 0px;">
-                            <input type="submit" name="sumitData" value="Submit" style="width: 100%; padding: 10px;" class="btn btn-primary btn btn-info" />
+                            <input type="submit" name="sumitData" value="Submit" style="width: 100%; padding: 10px; font-size: 18px; font-weight: bolder;" class="btn btn-primary btn btn-info" />
                         </div>
                     </form>
                 </div>
